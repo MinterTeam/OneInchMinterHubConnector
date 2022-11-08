@@ -18,7 +18,7 @@ contract OneInchMinterHubConnector {
     OneInchExchange public exchange = OneInchExchange(0x1111111254fb6c44bAC0beD2854e76F90643097d);
     Hub public hub = Hub(0xF5b0ed82a0b3e11567081694cC66c3df133f7C8F);
 
-    function swap(
+    function swapAndTransferToChain(
         IOneInchCaller caller,
         OneInchExchange.SwapDescription calldata desc,
         IOneInchCaller.CallDescription[] calldata calls,
