@@ -9,7 +9,7 @@
     "hardhat": "^2.12.2"
   },
   "dependencies": {
-    "1inch-v2-contracts": "github:1inch/1inch-v2-contracts",
+    "@openzeppelin/contracts": "^4.7.3",
     "hardhat-abi-exporter": "^2.10.1"
   }
 }
