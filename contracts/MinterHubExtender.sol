@@ -36,6 +36,7 @@ contract MinterHubExtender {
         Address.functionCallWithValue(to, data, msg.value);
         uint256 toDeposit = tokenTo.balanceOf(address(this)) - balanceBefore;
 
+        tokenTo.approve(address(hub), toDeposit);
         hub.transferToChain(address(tokenTo), destinationChain, destination, toDeposit, fee);
     }
 }
